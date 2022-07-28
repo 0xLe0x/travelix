@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
 </head>
 <body>
     <div class=" w-screen fixed top-0 z-50 bg-gray-50 rounded-b-md">
@@ -45,6 +46,13 @@
                 <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
                     {{-- <button class="items-center block px-10 py-2.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Sign in</button> --}}
                     <a href="/register"><button class="items-center block px-10 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Enter presale!</button></a>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary mt-5" onclick="web3Login();">Log in with MetaMask</button>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>

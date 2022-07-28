@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Web3LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +36,8 @@ Route::get('/transactions', function () {
     return view('backend.transactions');
 })->middleware(['auth'])->name('transactions');
 
+Route::get('/web3-login-message', [Web3LoginController::class, 'message']);
 
+Route::post('/web3-login-verify', [Web3LoginController::class, 'verify']);
 
 require __DIR__.'/auth.php';
