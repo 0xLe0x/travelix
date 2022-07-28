@@ -25,6 +25,7 @@
                 </div>
             </div>
 
+            <button class="btn btn-primary text-white mt-5" onclick="web3Login();">Connect</button>
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
